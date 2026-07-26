@@ -42,6 +42,9 @@ Architecture
 
 The application uses a feature-based structure that keeps business functionality separate from reusable and application-wide code.
 
+## Project Structure
+
+```text
 src/app/
 ├── core/
 │   └── storage/
@@ -60,8 +63,7 @@ src/app/
 │       ├── photo-card/
 │       └── photo-grid/
 └── app.routes.ts
-
-Core
+```
 
 Contains application-wide infrastructure. The storage service wraps browser storage access, so feature code does not depend directly on localStorage.
 
