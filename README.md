@@ -3,16 +3,17 @@ Photo Gallery
 
 A responsive photo browsing application built with Angular 22. Users can explore a continuously loaded photo stream, open a dedicated details page, and save their favorite photos locally.
 
+```text
 Application Routes
 
 Route :  / /photos/:id  /favorites
-
-
+```
+```text
 Description: 
 Displays the main photo stream
 Displays the selected photo and its details
 Displays the photos saved as favorites
-
+```
 
 Tech Stack
 
