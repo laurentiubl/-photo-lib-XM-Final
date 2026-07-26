@@ -1,0 +1,28 @@
+.photo-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  min-height: calc(100vh - 64px);
+  padding: 32px 24px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 180px);
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
+
+.not-found {
+  margin: auto;
+  text-align: center;
+}

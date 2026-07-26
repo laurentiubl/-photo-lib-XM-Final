@@ -1,0 +1,30 @@
+<section class="photo-details">
+  @if (photo(); as currentPhoto) {
+  <div class="image-wrapper">
+    <img
+      [src]="currentPhoto.url"
+      alt="Favorite photo"
+    />
+  </div>
+
+  <button
+    mat-flat-button
+    type="button"
+    (click)="removeFromFavorites()"
+  >
+    Remove from favorites
+  </button>
+  } @else {
+  <div class="not-found">
+    <h2>Photo not found</h2>
+
+    <button
+      mat-button
+      type="button"
+      routerLink="/favorites"
+    >
+      Back to favorites
+    </button>
+  </div>
+  }
+</section>

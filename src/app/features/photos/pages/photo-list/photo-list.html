@@ -1,0 +1,16 @@
+<section class="photo-page">
+  <app-photo-grid
+    [photos]="photos()"
+    (photoSelected)="selectPhoto($event)"
+  />
+
+  <app-load-more-trigger
+    (loadMore)="loadPhotos()"
+  />
+
+  @if (loading()) {
+  <div class="loader">
+    <mat-spinner diameter="40" />
+  </div>
+  }
+</section>

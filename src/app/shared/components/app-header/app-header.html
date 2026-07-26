@@ -1,0 +1,20 @@
+<mat-toolbar class="header">
+  <nav class="navigation" aria-label="Main navigation">
+    <a
+      mat-button
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Photos
+    </a>
+
+    <a
+      mat-button
+      routerLink="/favorites"
+      routerLinkActive="active"
+    >
+      Favorites
+    </a>
+  </nav>
+</mat-toolbar>

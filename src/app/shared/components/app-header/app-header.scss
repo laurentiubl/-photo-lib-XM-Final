@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  height: 64px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  height: 64px;
+
+  background: var(--mat-sys-surface);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+s
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    min-width: 96px;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+  .active {
+    background: rgba(0, 0, 0, 0.08);
+  }
+}

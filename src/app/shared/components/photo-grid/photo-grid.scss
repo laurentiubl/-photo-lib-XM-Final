@@ -1,0 +1,8 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+.page-content {
+  min-height: calc(100vh - 64px);
+}

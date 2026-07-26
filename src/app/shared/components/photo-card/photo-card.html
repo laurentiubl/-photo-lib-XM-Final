@@ -1,0 +1,11 @@
+<mat-card
+  class="photo-card"
+  appearance="outlined"
+  (click)="selectPhoto()"
+>
+  <img
+    mat-card-image
+    [src]="photo().url"
+    alt="Photo"
+  />
+</mat-card>
